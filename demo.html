@@ -1,0 +1,27 @@
+<html>
+	<head> 
+		<title>Coderwall Badges for jQuery - Demo</title>
+		<script type="text/javascript" src="jQuery.js"></script> 
+		<script type="text/javascript" src="coderwall.js"></script>
+		<script type="text/javascript">
+			$(window).ready(function(){
+				$('#coderwall').coderwall({
+					user: "jn-jones"
+				});
+				$('#coderwall_settings').coderwall({
+					user: "jn-jones",
+					size: 50,
+					num: 1,
+					desc: false,
+					error: "Hmm Coderwall seems to be unreachable"
+				});
+			}); 
+		</script>
+	</head>
+	<body>
+		<p>Some Text before</p>
+		<div id="coderwall">Loading...</div>
+		<div id="coderwall_settings">Loading...</div>
+		<p>Some Text after</p>
+	</body>
+</html>
